@@ -5,7 +5,7 @@ const YouTubeDownloader = require("./youtube-downloader.js")
 
 // 👉 initialisation
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 
 // 👉 settings
 app.set("views", path.join(__dirname, "views"))
