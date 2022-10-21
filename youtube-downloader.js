@@ -47,7 +47,6 @@ class YouTubeDownloader {
   async run() { 
     await this.getPageSource()
 
-
     // decipher signature if needed
     if(this.media[0].signatureCipher) {
       await this.getDecipherFunction()
@@ -55,6 +54,5 @@ class YouTubeDownloader {
     }
   } 
 } 
-
 
 module.exports = YouTubeDownloader

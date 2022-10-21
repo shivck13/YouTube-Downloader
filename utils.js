@@ -52,13 +52,7 @@ function formatBytes(bytes, decimals = 2) {
 }
 
 function isValidYTLink(link) {
-	return validator.isURL(link) && (validator.contains(link, "youtube.", {
-		ignoreCase: true
-	}) || validator.contains(link, "youtu.be/", {
-		ignoreCase: true
-	})) && validator.isLength(link, {
-		min: 27
-	})
+	return validator.isURL(link) && (validator.contains(link, "youtube.", {ignoreCase: true}) || validator.contains(link, "youtu.be/", {ignoreCase: true})) && validator.isLength(link, {min: 27})
 }
 
 module.exports = {
